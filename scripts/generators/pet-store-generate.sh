@@ -65,7 +65,7 @@ export default defineConfig({
       override: {
         mutator: {
           path: '../../../src/BaseClient.ts',
-          name: 'BaseClient',
+          name: 'orvalMutator',
         },
       },
     },

@@ -10,7 +10,10 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:unit": "jest tests/unit --runInBand",
+    "test:api": "jest tests/api --runInBand",
+    "typecheck": "tsc -p tsconfig.json"
   },
   "dependencies": {
     "axios": "^1.10.0",
@@ -20,13 +23,14 @@
     "pino":"^9.7.1"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.14",
     "jest": "^29.5.0" ,
     "jest-extended": "^6.0.0",
     "pino-pretty": "^9.0.0",
     "ts-jest": "^29.1.0",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.35.0",
-    "orval":"^7.17.0"
+    "orval":"^8.5.3"
 
 
   }

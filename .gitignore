@@ -1,1 +1,3 @@
 node_modules
+jest-axios-trace*.ndjson
+runtimelog*.log

@@ -43,6 +43,9 @@ Run:
 ```bash
 bash scripts/generators/pet-store-generate.sh
 ```
+npm run test:api -- tests/api/store-generated.test.ts
+```
+
 This script will:
 1. Download Swagger JSON from `https://petstore.swagger.io/v2/swagger.json`
 2. Convert it to YAML at `src/gen/openapi/petstore/petstore-openapi.yml`
